@@ -24,7 +24,7 @@ export default function signup() {
   };
   return (
     <>
-      <div className="h-[85vh] mt-4 bg-primary rounded-3xl p-16 flex justify-between">
+      <div className="mx-16 h-[85vh] mt-4 bg-primary rounded-3xl p-16 flex justify-between">
         <div className=" w-1/2">
           <h1 className=" text-8xl">Signup and Save money</h1>
         </div>
