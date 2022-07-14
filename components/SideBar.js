@@ -11,7 +11,7 @@ export default function SideBar() {
   const links = linksArr.map((link) => <LinkItem linkDetails={link} />);
   return (
     <>
-      <div className="bg-white w-1/4 shadow-lg p-4 ">{links}</div>
+      <div className=" hidden sm:block bg-white w-1/4 shadow-lg p-4 ">{links}</div>
     </>
   );
 }

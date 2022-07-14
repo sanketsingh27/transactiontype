@@ -21,15 +21,15 @@ export default function Login() {
   };
   return (
     <>
-      <div className=" mx-16 h-[85vh] mt-4 bg-primary rounded-3xl p-16 flex justify-between">
-        <div className=" w-1/2">
-          <h1 className=" mt-32 text-white text-8xl font-extrabold">
+      <div className=" mx-4 sm:mx-16  h-[85vh] mt-4 bg-primary rounded-3xl p-5 sm:p-16 flex justify-around sm:justify-between flex-wrap sm:flex-row flex-col">
+        <div className=" sm:w-1/2">
+          <h1 className=" sm:mt-32 text-center sm:text-left text-white  text-4xl sm:text-8xl font-extrabold">
             Log In and see your investments
           </h1>
         </div>
 
-        <div className=" w-1/2">
-          <form className=" my-32 w-80 mx-auto " onSubmit={handleSignup}>
+        <div className=" sm:w-1/2">
+          <form className=" sm:my-32 sm:w-80 mx-auto " onSubmit={handleSignup}>
             <div className="form-control w-full max-w-xs">
               <label className="label">
                 <span className="label-text text-white">What is your e-mail?</span>
