@@ -13,8 +13,8 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const data = await login(email, password);
-      router.push("/dashboard");
+      await login(email, password);
+      router.push("/all-transaction");
     } catch (err) {
       console.log(err);
     }
@@ -23,11 +23,13 @@ export default function Login() {
     <>
       <div className=" mx-16 h-[85vh] mt-4 bg-primary rounded-3xl p-16 flex justify-between">
         <div className=" w-1/2">
-          <h1 className=" text-8xl">Signup and Save money</h1>
+          <h1 className=" mt-32 text-white text-8xl font-extrabold">
+            Log In and see your investments
+          </h1>
         </div>
 
         <div className=" w-1/2">
-          <form onSubmit={handleSignup}>
+          <form className=" my-32 w-80 mx-auto " onSubmit={handleSignup}>
             <div className="form-control w-full max-w-xs">
               <label className="label">
                 <span className="label-text text-white">What is your e-mail?</span>

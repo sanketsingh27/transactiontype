@@ -3,9 +3,9 @@ import LinkItem from "./LinkItem";
 
 export default function SideBar() {
   const linksArr = [
-    { displayValue: "Home", route: "/dashboard" },
     { displayValue: "Transactions", route: "/all-transaction" },
-    { displayValue: "Home", route: "/settings" },
+    { displayValue: "Home", route: "/dashboard" },
+    { displayValue: "Settings", route: "/settings" },
   ];
 
   const links = linksArr.map((link) => <LinkItem linkDetails={link} />);

@@ -16,7 +16,7 @@ export default function signup() {
 
     try {
       const data = await signup(email, password);
-      router.push("/dashboard");
+      router.push("/all-transaction");
       console.log(data);
     } catch (err) {
       console.log(err);
@@ -26,11 +26,11 @@ export default function signup() {
     <>
       <div className="mx-16 h-[85vh] mt-4 bg-primary rounded-3xl p-16 flex justify-between">
         <div className=" w-1/2">
-          <h1 className=" text-8xl">Signup and Save money</h1>
+          <h1 className="mt-40 text-white text-8xl font-extrabold">Signup and Save money</h1>
         </div>
 
-        <div className=" w-1/2">
-          <form onSubmit={handleSignup}>
+        <div className=" my-32 w-1/2">
+          <form className=" w-80 mx-auto" onSubmit={handleSignup}>
             <div className="form-control w-full max-w-xs">
               <label className="label">
                 <span className="label-text text-white">What is your e-mail?</span>

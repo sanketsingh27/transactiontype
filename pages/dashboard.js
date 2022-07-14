@@ -5,7 +5,11 @@ export default function Dashboard() {
   return (
     <>
       <DashboardLayout>
-        <h1 className=" text-center font-bold text-4xl">This is inside DashboardLayout</h1>
+        <div className=" h-screen grid place-content-center">
+          <h1 className=" text-center font-bold text-8xl text-primary">
+            Account Summery details will be shown here.
+          </h1>
+        </div>
       </DashboardLayout>
     </>
   );

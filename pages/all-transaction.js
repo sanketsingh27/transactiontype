@@ -24,8 +24,10 @@ export default function AllTransactions() {
       <DashboardLayout>
         <h1 className=" text-center font-bold text-4xl">All Transactions</h1>
 
-        {transactions.length < 0 ? (
-          <span className="text-5xl font-bold">Loading ...</span>
+        {transactions.length === 0 ? (
+          <div className=" overflow-auto h-full grid place-content-center text-9xl text-primary">
+            <span className="text-5xl font-bold">Loading ...</span>
+          </div>
         ) : (
           <div className=" overflow-auto h-full">{TransactionList}</div>
         )}
